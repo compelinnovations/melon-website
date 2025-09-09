@@ -8,20 +8,23 @@ import { WeBuiltMelonForSection } from "@/components/we-built-melon-for-section"
 import { OurModelSection } from "@/components/our-model-section";
 import { PartnersSection } from "@/components/partners-section";
 import { Footer } from "@/components/footer";
+import { ScrollArea } from "@/components/ui/scroll-area";
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen ">
-      <Navigation />
-      <HeroSection />
-      <WhyChooseMelonSection />
-      {/* <WhyInsuranceSection /> */}
-      {/* <WhyChooseBenefitsSection /> */}
-      {/* <HowItWorksSection /> */}
-      {/* <WeBuiltMelonForSection /> */}
-      {/* <OurModelSection /> */}
-      {/* <PartnersSection /> */}
-      {/* <Footer /> */}
-    </div>
+    <ScrollArea className="min-h-screen">
+      <div className="min-h-screen">
+        <Navigation />
+        <HeroSection />
+        <WhyChooseMelonSection />
+        <WhyInsuranceSection />
+        {/* <WhyChooseBenefitsSection /> */}
+        {/* <HowItWorksSection /> */}
+        {/* <WeBuiltMelonForSection /> */}
+        {/* <OurModelSection /> */}
+        {/* <PartnersSection /> */}
+        {/* <Footer /> */}
+      </div>
+    </ScrollArea>
   );
 }
