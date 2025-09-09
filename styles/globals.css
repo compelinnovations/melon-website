@@ -115,6 +115,10 @@
   --color-sidebar-ring: var(--sidebar-ring);
 }
 
+body {
+  overflow: hidden !important;
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;

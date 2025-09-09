@@ -14,26 +14,11 @@ export function HeroSection() {
 
       <div className="relative md:h-[calc(100vh-5rem)] mx-auto">
         <div className="grid lg:grid-cols-[auto_1fr] gap-0 md:h-[calc(100vh-5rem)] items-center">
-          {/* Left Content */}
-          <div className="relative flex items-start md:h-[calc(100vh-5rem)] justify-start lg:justify-start">
-            {/* Main image container */}
-            <div className="relative z-10">
-              <Image
-                src="/images/woman-smiling-looking-at-melon-app.png"
-                alt="Smiling woman with phone using Melon health insurance app"
-                width={4000}
-                height={4000}
-                className="w-full h-auto md:max-w-[660px]] lg:max-w-[760px]] xl md:max-h-[calc(100vh-5rem)]  object-cover"
-                priority
-              />
-            </div>
-          </div>
-
-          {/* Right Content - Hero Image */}
-          <div className="text-white space-y-6 flex-1 lg:pr-8 lg:pl-8 z-10">
+          {/* Right Content - Hero Text (Mobile: Order 1) */}
+          <div className="text-white space-y-6 flex-1 lg:pr-8 lg:pl-8 z-10 order-1 lg:order-2 px-4 lg:px-0 pt-[100px] lg:pt-0 flex flex-col justify-center lg:justify-start">
             <TextAnimate
               animation="fadeIn"
-              className="text-2xl md:text-3xl lg:text-5xl xl:text-5xl font-bold leading-[1.3] tracking-tight"
+              className="text-center md:text-left text-2xl md:text-3xl lg:text-5xl xl:text-5xl font-bold leading-[1.3] tracking-tight"
               by="line"
               as="h1"
             >
@@ -42,7 +27,7 @@ export function HeroSection() {
 
             <TextAnimate
               animation="fadeIn"
-              className="text-lg md:text-xl lg:text-2xl text-white/90 leading-relaxed max-w-xl"
+              className="text-center md:text-left text-lg md:text-xl lg:text-2xl text-white/90 leading-relaxed max-w-xl"
               by="line"
               as="p"
               delay={0.5}
@@ -74,6 +59,21 @@ export function HeroSection() {
                 </div>
               </Button>
             </motion.div>
+          </div>
+
+          {/* Left Content - Main Image (Mobile: Order 2) */}
+          <div className="relative flex items-start md:h-[calc(100vh-5rem)] justify-start lg:justify-start order-2 lg:order-1">
+            {/* Main image container */}
+            <div className="relative z-10">
+              <Image
+                src="/images/woman-smiling-looking-at-melon-app.png"
+                alt="Smiling woman with phone using Melon health insurance app"
+                width={4000}
+                height={4000}
+                className="w-full h-auto md:max-w-[660px]] lg:max-w-[760px]] xl md:max-h-[calc(100vh-5rem)]  object-cover"
+                priority
+              />
+            </div>
           </div>
         </div>
       </div>
