@@ -55,7 +55,7 @@ const Features = () => {
             alt="Smile emoji"
             width={1920}
             height={1080}
-            className="opacityy-70 drop-shadow-lg"
+            className="drop-shadow-lg"
           />
         </motion.div>
 
@@ -154,7 +154,7 @@ const Features = () => {
             alt="Smile emoji"
             width={1920}
             height={1080}
-            className="opacityy-60 drop-shadow-md"
+            className="drop-shadow-md"
           />
         </motion.div>
 

@@ -18,12 +18,12 @@ export default function HomePage() {
         <HeroSection />
         <WhyChooseMelonSection />
         <WhyInsuranceSection />
-        {/* <WhyChooseBenefitsSection /> */}
-        {/* <HowItWorksSection /> */}
-        {/* <WeBuiltMelonForSection /> */}
-        {/* <OurModelSection /> */}
+        <WhyChooseBenefitsSection />
+        <WeBuiltMelonForSection />
+        <HowItWorksSection />
+        <OurModelSection />
         {/* <PartnersSection /> */}
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </ScrollArea>
   );

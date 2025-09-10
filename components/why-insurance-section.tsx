@@ -25,20 +25,13 @@ export function WhyInsuranceSection() {
               alt="Green smile emoji"
               width={1920}
               height={1080}
-              className="opacity-70 drop-shadow-lg"
+              className="drop-shadow-lg"
             />
           </motion.div>
 
           {/* Left Content - Image */}
           <div className="relative z-10">
             <div className="relative z-10 rounded-3xl p-8 pl-0">
-              {/* <Image
-                src="/images/why-insurance.png"
-                alt="Man pointing, explaining why insurance matters"
-                width={500}
-                height={600}
-                className="w-full h-auto"
-              /> */}
               <Image
                 src="/images/why-insurance.png"
                 alt="Man pointing, explaining why insurance matters"
@@ -95,7 +88,7 @@ export function WhyInsuranceSection() {
               alt="Green smile emoji"
               width={1920}
               height={1080}
-              className="  drop-shadow-md "
+              className="drop-shadow-md "
             />
           </motion.div>
 
