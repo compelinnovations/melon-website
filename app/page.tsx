@@ -22,7 +22,7 @@ export default function HomePage() {
         <WeBuiltMelonForSection />
         <HowItWorksSection />
         <OurModelSection />
-        {/* <PartnersSection /> */}
+        <PartnersSection />
         <Footer />
       </div>
     </ScrollArea>

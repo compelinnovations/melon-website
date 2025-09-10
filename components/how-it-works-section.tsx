@@ -22,7 +22,7 @@ export function HowItWorksSection() {
       <div className="relative md:h-[calc(100vh-5rem)] mx-auto w-full">
         <div className="grid lg:grid-cols-[auto_1fr] gap-0 md:h-[calc(100vh-5rem)] items-center md:w-full w-screen">
           {/* Right Content - Hero Text (Mobile: Order 1) */}
-          <div className="text-white space-y-3 flex-1  lg:pr-8 lg:pl-8 z-10 order-1 lg:order-2 px-6 lg:px-0  pt-[50px] md:pt-[100px] lg:pt-0 flex flex-col justify-center lg:justify-start w-full">
+          <div className="text-white space-y-3 flex-1   lg:pr-8 lg:pl-8 z-10 order-1 lg:order-2 px-6 lg:px-0  pt-[50px] md:pt-[100px] lg:pt-0 flex flex-col justify-center lg:justify-start  md:w-full w-screen">
             <TextAnimate
               animation="fadeIn"
               className="text-center md:text-left text-2xl md:text-3xl lg:text-5xl xl:text-5xl pb-0 font-bold   tracking-tight"
