@@ -6,13 +6,13 @@ export function OurModelSection() {
   return (
     <section className="md:py-20 py-20 pb-0  md:mt-[100px] w-screen relative overflow-hidden">
       {/* Phone Mockups - Positioned above the card on the right */}
-      <div className="absolute -right-[20px] -top-[24px] z-20 hidden lg:block">
+      <div className="absolute -right-[20px] -top-[60px] z-20 hidden lg:block">
         <Image
           src="/images/our-model-phones.png"
           alt="Melon app interface showing service providers and features"
           width={3000}
           height={3000}
-          className="w-full max-w-[604px] translate-y-10"
+          className="w-full max-w-[609px] translate-y-10"
           priority
         />
       </div>
@@ -24,7 +24,7 @@ export function OurModelSection() {
           <div className="absolute right-0 top-0 w-96 h-96 bg-white/10 rounded-full blur-3xl"></div>
           <div className="absolute left-0 bottom-0 w-80 h-80 bg-white/5 rounded-full blur-2xl"></div>
 
-          <div className="px-8 lg:px-12 py-16 lg:py-20 pb-[250px]">
+          <div className="px-8 lg:px-12 py-16 lg:py-16 pb-[250px]">
             <div className="max-w-2xl lg:max-w-xl xl:max-w-2xl lg:mr-[300px] xl:mr-[200px]">
               {/* Left Content - Text */}
               <div className="text-white space-y-8 relative z-10">
