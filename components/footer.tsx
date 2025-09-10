@@ -105,11 +105,14 @@ export function Footer() {
             </div>
             <div className="text-sm text-gray-600">
               © 2025 Melon |
-              <Link href="#" className="hover:text-gray-800 ml-1">
+              <Link href="/privacy-policy" className="hover:text-gray-800 ml-1">
                 Privacy Policy
               </Link>{" "}
               |
-              <Link href="#" className="hover:text-gray-800 ml-1">
+              <Link
+                href="/terms-conditions"
+                className="hover:text-gray-800 ml-1"
+              >
                 Terms of Use
               </Link>
             </div>
@@ -185,11 +188,17 @@ export function Footer() {
             <div className="flex justify-between items-center">
               <div className="text-sm text-gray-600">
                 © 2025 Melon |
-                <Link href="#" className="hover:text-gray-800 ml-1">
+                <Link
+                  href="/privacy-policy"
+                  className="hover:text-gray-800 ml-1"
+                >
                   Privacy Policy
                 </Link>{" "}
                 |
-                <Link href="#" className="hover:text-gray-800 ml-1">
+                <Link
+                  href="/terms-conditions"
+                  className="hover:text-gray-800 ml-1"
+                >
                   Terms of Use
                 </Link>
               </div>
