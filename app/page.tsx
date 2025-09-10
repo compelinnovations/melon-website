@@ -1,7 +1,7 @@
 import { Navigation } from "@/components/navigation";
 import { HeroSection } from "@/components/hero-section";
 import { WhyInsuranceSection } from "@/components/why-insurance-section";
-import { WhyChooseMelonSection } from "@/components/why-choose-melon-section";
+import { WhatIsMelonSection } from "@/components/what-is-melon-section";
 import { WhyChooseBenefitsSection } from "@/components/why-choose-benefits-section";
 import { HowItWorksSection } from "@/components/how-it-works-section";
 import { WeBuiltMelonForSection } from "@/components/we-built-melon-for-section";
@@ -16,7 +16,7 @@ export default function HomePage() {
       <div className="min-h-screen">
         <Navigation />
         <HeroSection />
-        <WhyChooseMelonSection />
+        <WhatIsMelonSection />
         <WhyInsuranceSection />
         <WhyChooseBenefitsSection />
         <WeBuiltMelonForSection />

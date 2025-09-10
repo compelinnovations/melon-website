@@ -4,39 +4,39 @@ import Image from "next/image";
 import Logo from "./logo";
 import { motion } from "motion/react";
 
-export function WhyChooseBenefitsSection() {
-  const benefits = [
-    {
-      image: "/images/mobile.png",
-      title: "Instant sign-up",
-      description: "No paperwork, no waiting, just download and go.",
-    },
-    {
-      image: "/images/building.png",
-      title: "Trusted partner hospitals",
-      description:
-        "Access to a growing network of quality hospitals and pharmacies.",
-    },
-    {
-      image: "/images/help.png",
-      title: "Reliable support",
-      description:
-        "Get real support from a person, by email, phone, or in real time when you need it.",
-    },
-    {
-      image: "/images/money.png",
-      title: "Affordable plans",
-      description: "Real coverage at prices that fit your budget.",
-    },
-    {
-      image: "/images/verify.png",
-      title: "Clear terms",
-      description: "No hidden fees, no surprises.",
-    },
-  ];
+const benefits = [
+  {
+    image: "/images/mobile.png",
+    title: "Instant sign-up",
+    description: "No paperwork, no waiting, just download and go.",
+  },
+  {
+    image: "/images/building.png",
+    title: "Trusted partner hospitals",
+    description:
+      "Access to a growing network of quality hospitals and pharmacies.",
+  },
+  {
+    image: "/images/help.png",
+    title: "Reliable support",
+    description:
+      "Get real support from a person, by email, phone, or in real time when you need it.",
+  },
+  {
+    image: "/images/money.png",
+    title: "Affordable plans",
+    description: "Real coverage at prices that fit your budget.",
+  },
+  {
+    image: "/images/verify.png",
+    title: "Clear terms",
+    description: "No hidden fees, no surprises.",
+  },
+];
 
+export function WhyChooseBenefitsSection() {
   return (
-    <section className="py-20 bg-main-700">
+    <section id="why-melon" className="py-20 bg-main-700">
       <div className="max-w-7xl mx-auto px-0 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-2xl md:text-4xl font-medium text-white flex items-center justify-center gap-2">

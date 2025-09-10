@@ -15,7 +15,10 @@ export function HowItWorksSection() {
   ];
 
   return (
-    <section className="relative md:h-[calc(100vh-5rem)]   overflow-hidden">
+    <section
+      id="how-it-works"
+      className="relative md:h-[calc(100vh-5rem)]   overflow-hidden"
+    >
       {/* Background gradient overlay */}
       <div className="absolute inset-0 bg-main-700  "></div>
 

@@ -1,6 +1,6 @@
 export function WeBuiltMelonForSection() {
   return (
-    <section className="py-20 bg-gray-50">
+    <section id="who-is-melon-for" className="py-20 bg-gray-50">
       <div className="container mx-auto px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4 text-balance">
