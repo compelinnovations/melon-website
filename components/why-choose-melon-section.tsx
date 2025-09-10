@@ -9,7 +9,7 @@ import { motion } from "motion/react";
 export function WhyChooseMelonSection() {
   return (
     <section className="py-10 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl md:mx-auto px-4 sm:px-6 lg:px-8 md:w-full w-screen">
         <div className="text-center space-y-8 mb-8">
           <h2 className="text-3xl md:text-4xl font-medium text-gray-900 flex items-center justify-center gap-2">
             Hello{" "}
