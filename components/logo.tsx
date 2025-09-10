@@ -3,13 +3,13 @@ import Image from "next/image";
 
 const Logo = (params: {
   className?: string;
-  src?: string;
   width?: number;
   height?: number;
+  useWhite?: boolean;
 }) => {
   return (
     <Image
-      src={params.src || "/images/logo.png"}
+      src={params.useWhite ? "/images/logo-white.png" : "/images/logo.png"}
       width={params.width || 1920}
       height={params.height || 1080}
       alt="Melon logo"

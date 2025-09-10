@@ -1,9 +1,9 @@
-import Link from "next/link"
-import { Instagram, Twitter, Facebook, Linkedin } from "lucide-react"
+import Link from "next/link";
+import { Instagram, Twitter, Facebook, Linkedin } from "lucide-react";
 
 export function Footer() {
   return (
-    <footer className="bg-gray-100 py-16">
+    <footer className="bg-gray-100 py-16 mx-16 pb-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8">
           {/* Left Content */}
@@ -16,7 +16,9 @@ export function Footer() {
                   <span className="text-[#005aad]">elon</span>
                 </span>
               </div>
-              <p className="text-gray-700 text-lg max-w-md">Your health. Your peace of mind. Protected in minutes.</p>
+              <p className="text-gray-700 text-lg max-w-md">
+                Your health. Your peace of mind. Protected in minutes.
+              </p>
             </div>
 
             {/* App Download Buttons */}
@@ -67,13 +69,19 @@ export function Footer() {
             <div className="text-right">
               <div className="mb-2">
                 <span className="text-gray-700">Talk to Us: </span>
-                <Link href="mailto:hello@joinmelon.co" className="text-gray-900 hover:text-blue-600">
+                <Link
+                  href="mailto:hello@joinmelon.co"
+                  className="text-gray-900 hover:text-blue-600"
+                >
                   hello@joinmelon.co
                 </Link>
               </div>
               <div>
                 <span className="text-gray-700">For Support: </span>
-                <Link href="mailto:help@joinmelon.co" className="text-gray-900 hover:text-blue-600">
+                <Link
+                  href="mailto:help@joinmelon.co"
+                  className="text-gray-900 hover:text-blue-600"
+                >
                   help@joinmelon.co
                 </Link>
               </div>
@@ -118,5 +126,5 @@ export function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }

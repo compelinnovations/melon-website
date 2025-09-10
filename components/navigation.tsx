@@ -1,6 +1,5 @@
 "use client";
 
-import { useObservable, Computed } from "@legendapp/state/react";
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import {
@@ -14,13 +13,13 @@ import Image from "next/image";
 import Link from "next/link";
 
 export function Navigation() {
-  const isScrolled = useObservable(false);
-  const isMobileMenuOpen = useObservable(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       const scrolled = window.scrollY > 50;
-      isScrolled.set(scrolled);
+      setIsScrolled(scrolled);
     };
 
     // Check initial scroll position on mount
@@ -31,11 +30,9 @@ export function Navigation() {
   }, []);
 
   return (
-    <Computed>
-      {() => (
         <nav
           className={`fixed top-0 left-0 right-0 z-50 transition-all ease-in-out duration-200 ${
-            isScrolled.get()
+            isScrolled
               ? `bg-white/20 backdrop-blur-md `
               : `bg-transparent  `
           }`}
@@ -44,94 +41,70 @@ export function Navigation() {
             <div className="flex  px-4 md:px-6 lg:px-8 items-center justify-between h-16">
               {/* Logo */}
               <div className="flex-shrink-0">
-                <div
-                  className={`text-2xl font-bold transition-colors ease-in-out ${
-                    isScrolled.get() ? "text-gray-900" : "text-white"
-                  }`}
-                >
-                  <Computed>
-                    {() => (
-                      <Image
-                        src="/images/logo-white.png"
-                        alt="Melon logo"
-                        width={1920}
-                        height={1080}
-                        className={`w-full h-auto max-w-[100px] transition-all ease-in-out   lg:max-w-[100px] object-contain ${
-                          isScrolled.get() ? "hidden" : "block"
-                        }`}
-                        priority
-                      />
-                    )}
-                  </Computed>
+                    <div
+                      className={`text-2xl font-bold transition-colors ease-in-out ${
+                        isScrolled ? "text-gray-900" : "text-white"
+                      }`}
+                    >
+                          <Image
+                            src="/images/logo-white.png"
+                            alt="Melon logo"
+                            width={1920}
+                            height={1080}
+                            className={`w-full h-auto max-w-[100px] transition-all ease-in-out   lg:max-w-[100px] object-contain ${
+                              isScrolled ? "hidden" : "block"
+                            }`}
+                            priority
+                          />
 
-                  <Computed>
-                    {() => (
-                      <Image
-                        src="/images/logo.png"
-                        alt="Melon logo"
-                        width={1920}
-                        height={1080}
-                        className={`w-full h-auto max-w-[100px]  transition-all ease-in-out  lg:max-w-[100px] object-contain ${
-                          isScrolled.get() ? "block" : "hidden"
-                        }`}
-                        priority
-                      />
-                    )}
-                  </Computed>
-                </div>
+                          <Image
+                            src="/images/logo.png"
+                            alt="Melon logo"
+                            width={1920}
+                            height={1080}
+                            className={`w-full h-auto max-w-[100px]  transition-all ease-in-out  lg:max-w-[100px] object-contain ${
+                              isScrolled ? "block" : "hidden"
+                            }`}
+                            priority
+                          />
+                    </div>
               </div>
 
               {/* Navigation Links - Desktop */}
               <div className="hidden md:block">
                 <div className="ml-10 flex items-baseline space-x-8">
-                  <Computed>
-                    {() => (
                       <a
                         href="#what-is-melon"
                         className={`transition-colors font-medium ${
-                          isScrolled.get() ? "text-gray-900" : "text-white"
+                          isScrolled ? "text-gray-900" : "text-white"
                         }`}
                       >
                         What is Melon
                       </a>
-                    )}
-                  </Computed>
-                  <Computed>
-                    {() => (
                       <a
                         href="#why-melon"
                         className={`transition-colors font-medium ${
-                          isScrolled.get() ? "text-gray-900" : "text-white"
+                          isScrolled ? "text-gray-900" : "text-white"
                         }`}
                       >
                         Why Melon
                       </a>
-                    )}
-                  </Computed>
-                  <Computed>
-                    {() => (
                       <a
                         href="#who-is-melon-for"
                         className={`transition-colors font-medium ${
-                          isScrolled.get() ? "text-gray-900" : "text-white"
+                          isScrolled ? "text-gray-900" : "text-white"
                         }`}
                       >
                         Who is Melon for
                       </a>
-                    )}
-                  </Computed>
-                  <Computed>
-                    {() => (
                       <a
                         href="#how-it-works"
                         className={`transition-colors font-medium ${
-                          isScrolled.get() ? "text-gray-900" : "text-white"
+                          isScrolled ? "text-gray-900" : "text-white"
                         }`}
                       >
                         How it works
                       </a>
-                    )}
-                  </Computed>
                 </div>
               </div>
 
@@ -143,19 +116,17 @@ export function Navigation() {
 
                 {/* Mobile menu */}
                 <Sheet
-                  open={isMobileMenuOpen.get()}
-                  onOpenChange={(open) => isMobileMenuOpen.set(open)}
+                  open={isMobileMenuOpen}
+                  onOpenChange={setIsMobileMenuOpen}
                 >
                   <SheetTrigger asChild>
-                    <Computed>
-                      {() => (
                         <Button
                           className={`group md:hidden h-auto w-auto p-2 ${
-                            isScrolled.get() ? "text-gray-900" : "text-white"
+                            isScrolled ? "text-gray-900" : "text-white"
                           }`}
                           variant="ghost"
                           aria-label={
-                            isMobileMenuOpen.get() ? "Close menu" : "Open menu"
+                            isMobileMenuOpen ? "Close menu" : "Open menu"
                           }
                         >
                           <svg
@@ -184,8 +155,6 @@ export function Navigation() {
                             />
                           </svg>
                         </Button>
-                      )}
-                    </Computed>
                   </SheetTrigger>
                   <SheetContent
                     side="top"
@@ -240,28 +209,28 @@ export function Navigation() {
                       <Link
                         href="#what-is-melon"
                         className="text-xl font-light text-white hover:text-white/80 transition-colors"
-                        onClick={() => isMobileMenuOpen.set(false)}
+                        onClick={() => setIsMobileMenuOpen(false)}
                       >
                         What is Melon
                       </Link>
                       <Link
                         href="#why-melon"
                         className="text-xl font-light text-white hover:text-white/80 transition-colors"
-                        onClick={() => isMobileMenuOpen.set(false)}
+                        onClick={() => setIsMobileMenuOpen(false)}
                       >
                         Why Melon
                       </Link>
                       <Link
                         href="#who-is-melon-for"
                         className="text-xl font-light text-white hover:text-white/80 transition-colors"
-                        onClick={() => isMobileMenuOpen.set(false)}
+                        onClick={() => setIsMobileMenuOpen(false)}
                       >
                         Who is Melon for
                       </Link>
                       <Link
                         href="#how-it-works"
                         className="text-xl font-light text-white hover:text-white/80 transition-colors"
-                        onClick={() => isMobileMenuOpen.set(false)}
+                        onClick={() => setIsMobileMenuOpen(false)}
                       >
                         How it works
                       </Link>
@@ -279,7 +248,5 @@ export function Navigation() {
             </div>
           </div>
         </nav>
-      )}
-    </Computed>
   );
 }
