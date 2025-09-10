@@ -13,7 +13,7 @@ export function HeroSection() {
       <div className="absolute inset-0 bg-main-700  "></div>
 
       <div className="relative md:h-[calc(100vh-5rem)] mx-auto">
-        <div className="grid lg:grid-cols-[auto_1fr] gap-0 md:h-[calc(100vh-5rem)] items-center">
+        <div className="grid lg:grid-cols-[auto_1fr] gap-0 md:h-[calc(100vh-5rem)] items-center md:w-full w-screen">
           {/* Right Content - Hero Text (Mobile: Order 1) */}
           <div className="text-white space-y-6 flex-1 lg:pr-8 lg:pl-8 z-10 order-1 lg:order-2 px-4 lg:px-0 pt-[100px] lg:pt-0 flex flex-col justify-center lg:justify-start">
             <TextAnimate

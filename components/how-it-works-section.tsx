@@ -34,7 +34,7 @@ export function HowItWorksSection() {
 
             <TextAnimate
               animation="fadeIn"
-              className="text-center md:text-left text-lg md:text-xl lg:text-2xl text-white/90 leading-relaxed max-w-xl"
+              className="text-center md:text-left text-lg md:text-xl lg:text-xl text-white/90 leading-relaxed max-w-xl"
               by="line"
               as="p"
               delay={0.5}
