@@ -4,15 +4,15 @@ import { ArrowRight } from "lucide-react";
 
 export function OurModelSection() {
   return (
-    <section className="md:py-20 py-20 pb-0  md:mt-[100px] w-screen relative overflow-hidden">
+    <section className="md:py-20 md:pb-10 py-20 pb-0  md:mt-[100px] w-screen relative overflow-hiddenN">
       {/* Phone Mockups - Positioned above the card on the right */}
-      <div className="absolute -right-[20px] -top-[60px] z-20 hidden lg:block">
+      <div className="absolute -right-[20px] -top-[94px] z-20 hidden lg:block">
         <Image
           src="/images/our-model-phones.png"
           alt="Melon app interface showing service providers and features"
           width={3000}
           height={3000}
-          className="w-full max-w-[609px] translate-y-10"
+          className="w-full max-w-[650px] translate-y-10"
           priority
         />
       </div>
