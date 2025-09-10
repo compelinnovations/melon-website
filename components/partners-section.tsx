@@ -8,31 +8,31 @@ const partners = [
   {
     name: "iRisk Management",
     logo: "/images/irisk-mgt.png",
-    bgColor: "bg-gray-800",
+    bgColor: "bg-gray-900",
     textColor: "text-white",
   },
   {
     name: "Glico",
     logo: "/images/glico.png",
-    bgColor: "bg-gray-300",
+    bgColor: "bg-gray-200",
     textColor: "text-gray-800",
   },
   {
     name: "Phoenix Health Insurance",
     logo: "/images/phoenix.png",
-    bgColor: "bg-gray-300",
+    bgColor: "bg-gray-200",
     textColor: "text-gray-800",
   },
   {
     name: "Equity Health Insurance",
     logo: "/images/equity-insurance.png",
-    bgColor: "bg-gray-800",
+    bgColor: "bg-gray-900",
     textColor: "text-white",
   },
   {
     name: "Top Pharmacy",
     logo: "/images/top-pharm.png",
-    bgColor: "bg-gray-300",
+    bgColor: "bg-gray-200",
     textColor: "text-gray-800",
   },
 ];
