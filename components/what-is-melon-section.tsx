@@ -24,10 +24,16 @@ export function WhatIsMelonSection() {
             or on the move.
           </p>
 
-          <Button className="bg-[#04c751] hover:bg-green-600 text-white rounded-full px-10 pl-[17px] py-5 text-lg">
-            Download the App
-            <ArrowRight className="w-4 h-4" />
-          </Button>
+          <button className="bg-main-700 hover:bg-main-600 text-white px-6 py-3 rounded-full font-semibold flex items-center justify-center space-x-2 transition-colors">
+            <span>Download the app</span>
+            <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+              <path
+                fillRule="evenodd"
+                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                clipRule="evenodd"
+              />
+            </svg>
+          </button>
         </div>
 
         <Features />
