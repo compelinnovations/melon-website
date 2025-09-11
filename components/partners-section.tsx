@@ -40,7 +40,7 @@ const partners = [
 export function PartnersSection() {
   return (
     <section className="md:py-16 pt-0 bg-white overflow-hidden w-screen">
-      <div className="max-w-7xl mx-auto px-0 md:px-6 lg:px-6">
+      <div className="max-w-[1330px] rounded-l-md mx-auto px-0 md:px-6 lg:px-6">
         {/* Header */}
         <div className="text-center mb-12">
           <h2 className="text-2xl md:text-4xl font-medium text-black flex items-center justify-center gap-0">
@@ -49,9 +49,9 @@ export function PartnersSection() {
             </span>
             works with
           </h2>
-          <p className="text-xl pt-4 text-gray-600 px-4 max-w-2xl mx-auto">
+          {/* <p className="text-xl pt-4 text-gray-600 px-4 max-w-2xl mx-auto">
             Your health deserves quality care you can trust.
-          </p>
+          </p> */}
         </div>
 
         {/* Auto-scrolling Partners */}

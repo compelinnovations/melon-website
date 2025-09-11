@@ -29,7 +29,7 @@ export function WhatIsMelonSection() {
               <ArrowRight className="w-4 h-4" />
             </Button> */}
 
-            <button className="bg-sec-500 hover:bg-sec-600 min-w-[70vw] text-white px-6 py-3 rounded-full font-semibold flex items-center justify-center space-x-2 transition-colors">
+            <button className="bg-sec-500 hover:bg-sec-600 min-w-[70vw] md:min-w-[300px] text-white px-6 py-3 rounded-full font-semibold flex items-center justify-center space-x-2 transition-colors">
               <span>Download the app</span>
               <div className="bg-white/20 rounded-full p-1">
                 <ArrowRight className="w-5 h-5" />
