@@ -309,7 +309,7 @@ const Features = () => {
               <div className="pbb-24">
                 <h2
                   className={cn(
-                    "text-2xl font-normal mb-6 px-6 pt-6 pb-0",
+                    "text-2xl font-normal mb-6 px-6 pt-6 pb-0 pr-[60px]",
                     audience.dialogTextColor
                   )}
                 >
