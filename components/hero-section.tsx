@@ -36,7 +36,7 @@ export function HeroSection() {
             </TextAnimate>
 
             <motion.div
-              className="flex   flex-row gap-2 sm:gap-4 pt-4 w-full max-w-full"
+              className="flex flex-row gap-2 sm:gap-4 pt-4 w-full max-w-full"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               animate={{ opacity: 1, y: 0 }}
@@ -52,7 +52,7 @@ export function HeroSection() {
                 <span className="whitespace-nowrap sm:whitespace-normal">
                   Get covered in minutes
                 </span>
-                <div className="bg-whitee/20 rounded-full p-1">
+                <div className="bg-whitee/20 border-[2px] border-white rounded-full p-1">
                   <ArrowRight className="w-4 sm:w-5 h-4 sm:h-5" />
                 </div>
               </Button>
@@ -64,7 +64,7 @@ export function HeroSection() {
                 <span className="whitespace-nowrap sm:whitespace-normal">
                   How Melon Works
                 </span>
-                <div className="bg-whitee/20 hover:bg-[#0066CC]/20 rounded-full p-1 transition-colors">
+                <div className="bg-whitee/20 border-[2px] border-white hover:bg-[#0066CC]/20 rounded-full p-1 transition-colors">
                   <ArrowRight className="w-4 sm:w-5 h-4 sm:h-5" />
                 </div>
               </Button>
