@@ -63,7 +63,7 @@ export function WhyInsuranceSection() {
               </p>
             </div>
 
-            <Button className="bg-blue-600 hover:bg-blue-700 text-white rounded-full px-8 py-6 text-lg font-semibold flex items-center justify-center gap-3 shadow-lg hover:shadow-xl transition-all duration-200 min-w-[240px]">
+            <Button className="bg-main-700 hover:bg-main-600 text-white rounded-full px-8 py-6 text-lg font-semibold flex items-center justify-center gap-3 shadow-lg hover:shadow-xl transition-all duration-200 min-w-[240px]">
               Get covered in minutes
               <div className="bg-white/20 rounded-full p-1">
                 <ArrowRight className="w-5 h-5" />
@@ -129,7 +129,7 @@ export function WhyInsuranceSection() {
             transition={{ duration: 0.6, delay: 0.6 }}
             viewport={{ once: true }}
           >
-            <Button className="bg-blue-600 hover:bg-blue-700 text-white rounded-full px-8 py-6 text-lg font-semibold flex items-center justify-center gap-2 shadow-lg hover:shadow-xl transition-all duration-200 min-w-[240px]">
+            <Button className="bg-main-700 hover:bg-main-600 text-white rounded-full px-8 py-6 text-lg font-semibold flex items-center justify-center gap-2 shadow-lg hover:shadow-xl transition-all duration-200 min-w-[240px]">
               Get covered in minutes
               <div className="bg-white/20 rounded-full p-1">
                 <ArrowRight className="w-5 h-5" />
