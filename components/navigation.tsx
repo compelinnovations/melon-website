@@ -50,7 +50,8 @@ export function Navigation() {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all ease-in-out duration-200 ${
-        isScrolled ? `bg-white/20 backdrop-blur-md ` : `bg-transparent  `
+        // isScrolled ? `bg-white/20 backdrop-blur-md ` : `bg-transparent  `
+        isScrolled ? `bg-main-700` : `bg-transparent  `
       }`}
     >
       <div className="max-w-7xl mx-auto ">
@@ -59,7 +60,8 @@ export function Navigation() {
           <div className="flex-shrink-0">
             <div
               className={`text-2xl font-bold transition-colors ease-in-out ${
-                isScrolled ? "text-gray-900" : "text-white"
+                // isScrolled ? "text-gray-900" : "text-white"
+                "text-white"
               }`}
             >
               <Image
@@ -68,12 +70,13 @@ export function Navigation() {
                 width={1920}
                 height={1080}
                 className={`w-full h-auto max-w-[100px] transition-all ease-in-out   lg:max-w-[100px] object-contain ${
-                  isScrolled ? "hidden" : "block"
+                  // isScrolled ? "hidden" : "block"
+                  isScrolled ? "block" : "block"
                 }`}
                 priority
               />
 
-              <Image
+              {/* <Image
                 src="/images/logo.png"
                 alt="Melon logo"
                 width={1920}
@@ -82,7 +85,7 @@ export function Navigation() {
                   isScrolled ? "block" : "hidden"
                 }`}
                 priority
-              />
+              /> */}
             </div>
           </div>
 
@@ -139,7 +142,8 @@ export function Navigation() {
               <SheetTrigger asChild>
                 <Button
                   className={`group md:hidden h-auto w-auto p-2 ${
-                    isScrolled ? "text-gray-900" : "text-white"
+                    // isScrolled ? "text-gray-900" : "text-white"
+                    isScrolled ? "text-white" : "text-white"
                   }`}
                   variant="ghost"
                   aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}

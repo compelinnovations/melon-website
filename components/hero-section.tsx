@@ -18,7 +18,7 @@ export function HeroSection() {
           <div className="text-white space-y-6 flex-1 lg:pr-8 lg:pl-8 z-10 order-1 lg:order-2 px-4 lg:px-0 pt-[100px] lg:pt-0 flex flex-col justify-center lg:justify-start">
             <TextAnimate
               animation="fadeIn"
-              className="text-center md:text-left text-2xl md:text-3xl lg:text-5xl xl:text-5xl font-bold leading-[1.3] tracking-tight"
+              className="text-center md:text-left text-2xll text-[20px] md:text-3xl lg:text-5xl xl:text-5xl font-bold leading-[1.3] tracking-tight"
               by="line"
               as="h1"
             >
@@ -27,7 +27,7 @@ export function HeroSection() {
 
             <TextAnimate
               animation="fadeIn"
-              className="text-center md:text-left text-lg md:text-xl lg:text-2xl text-white/90 leading-relaxed max-w-xl"
+              className="text-center md:text-left text-lgg text-[14px] md:text-xl lg:text-2xl text-white/90 leading-relaxed max-w-xl"
               by="line"
               as="p"
               delay={0.5}
@@ -36,26 +36,36 @@ export function HeroSection() {
             </TextAnimate>
 
             <motion.div
-              className="flex flex-col sm:flex-row gap-4 pt-4"
+              className="flex   flex-row gap-2 sm:gap-4 pt-4 w-full max-w-full"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: 0.5 }}
             >
-              <Button className="bg-[#00B74A] hover:bg-[#00A041] text-white rounded-full px-8 py-6 text-lg font-semibold flex items-center justify-center gap-3 shadow-lg hover:shadow-xl transition-all duration-200 min-w-[240px]">
-                Get covered in minutes
-                <div className="bg-white/20 rounded-full p-1">
-                  <ArrowRight className="w-5 h-5" />
+              <Button
+                className="bg-[#00B74A] hover:bg-[#00A041] text-white rounded-full 
+              px-0 sm:px-8 py-3 sm:py-4 text-xss text-[10px] sm:text-lg font-semibold 
+              flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-3 
+              shadow-lg hover:shadow-xl transition-all duration-200 flex-1 
+              sm:flex-none sm:min-w-[240px] text-center leading-tight h-auto"
+              >
+                <span className="whitespace-nowrap sm:whitespace-normal">
+                  Get covered in minutes
+                </span>
+                <div className="bg-whitee/20 rounded-full p-1">
+                  <ArrowRight className="w-4 sm:w-5 h-4 sm:h-5" />
                 </div>
               </Button>
 
               <Button
                 variant="outline"
-                className="border-2 border-white text-white hover:bg-white hover:text-[#0066CC] rounded-full px-8 py-6 text-lg font-semibold flex items-center justify-center gap-3 bg-transparent transition-all duration-200 min-w-[200px]"
+                className="border-2 border-white text-white hover:bg-white hover:text-[#0066CC] rounded-full px-3 sm:px-8 py-3 sm:py-4 text-[10px] sm:text-lg font-semibold flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-3 bg-transparent transition-all duration-200 flex-1 sm:flex-none sm:min-w-[200px] text-center leading-tight h-auto"
               >
-                How Melon Works
-                <div className="bg-white/20 hover:bg-[#0066CC]/20 rounded-full p-1 transition-colors">
-                  <ArrowRight className="w-5 h-5" />
+                <span className="whitespace-nowrap sm:whitespace-normal">
+                  How Melon Works
+                </span>
+                <div className="bg-whitee/20 hover:bg-[#0066CC]/20 rounded-full p-1 transition-colors">
+                  <ArrowRight className="w-4 sm:w-5 h-4 sm:h-5" />
                 </div>
               </Button>
             </motion.div>
