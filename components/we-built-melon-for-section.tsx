@@ -197,11 +197,11 @@ const Features = () => {
       </DialogTrigger>
       <DialogContent
         showCloseButton={false}
-        className="sm:max-w-[1200px] p-0 overflow-hidden "
+        className="sm:max-w-[90vw] md:max-w-[1220px]   p-0 overflow-hidden "
       >
         <div
           className={cn(
-            "min-h-[600px] text-white relative",
+            "min-h-[600px]  text-white relative",
             audience.dialogBgColor
           )}
         >
