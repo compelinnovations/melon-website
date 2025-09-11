@@ -10,10 +10,10 @@ export function WhatIsMelonSection() {
     <section id="what-is-melon" className="py-10 bg-white">
       <div className="max-w-7xl md:mx-auto px-4 sm:px-6 lg:px-8 md:w-full w-screen">
         <div className="text-center space-y-8 mb-8">
-          <h2 className="text-3xl md:text-4xl font-medium text-gray-900 flex items-center justify-center gap-0">
+          <h2 className="text-[20px] md:text-4xl font-medium text-gray-900 flex items-center pb-1 justify-center gap-0">
             Hello
-            <span className="text-blue-600">
-              <Logo className="w-[170px]" />
+            <span className="text-blue-600 pt-[1px]">
+              <Logo className="w-[91px] md:w-[170px]" />
             </span>
           </h2>
 
