@@ -18,7 +18,7 @@ export function HeroSection() {
           <div className="text-white space-y-6 flex-1 lg:pr-8 lg:pl-8 z-10 order-1 lg:order-2 px-4 lg:px-0 pt-[100px] lg:pt-0 flex flex-col justify-center lg:justify-start">
             <TextAnimate
               animation="fadeIn"
-              className="text-center md:text-left text-2xll text-[20px] md:text-3xl lg:text-5xl xl:text-5xl font-bold leading-[1.3] tracking-tight"
+              className="text-center md:text-left text-2xll text-[23px] md:text-3xl lg:text-5xl xl:text-5xl font-bold leading-[1.3] tracking-tight"
               by="line"
               as="h1"
             >
@@ -27,7 +27,7 @@ export function HeroSection() {
 
             <TextAnimate
               animation="fadeIn"
-              className="text-center md:text-left text-lgg text-[14px] md:text-xl lg:text-2xl text-white/90 leading-relaxed max-w-xl"
+              className="text-center md:text-left text-lgg text-[16px] px-4 md:text-xl lg:text-2xl text-white/90 leading-relaxed max-w-xl"
               by="line"
               as="p"
               delay={0.5}
@@ -43,7 +43,7 @@ export function HeroSection() {
               transition={{ duration: 0.4, delay: 0.5 }}
             >
               <Button
-                className="bg-[#00B74A] hover:bg-[#00A041] text-white rounded-full 
+                className="bg-[#04C751] hover:bg-[#04C751] text-white rounded-full 
               px-0 sm:px-8 py-[8px] sm:py-4 text-xss text-[10px] sm:text-lg font-semibold 
               flex flex-coll sm:flex-row items-center justify-center gap-2 sm:gap-3 
               shadow-lg hover:shadow-xl transition-all duration-200 flex-1 
