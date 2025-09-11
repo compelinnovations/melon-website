@@ -228,8 +228,8 @@ const Features = () => {
             {/* Left side - Image */}
             <div className="relative">
               <Image
-                width={3000}
-                height={3000}
+                width={2000}
+                height={2000}
                 src={audience.dialogImage}
                 alt={altText}
                 className="w-full h-full object-cover"
@@ -349,8 +349,8 @@ const Features = () => {
                 {/* Mobile Image */}
                 <div className="relative mb-6">
                   <Image
-                    width={3000}
-                    height={3000}
+                    width={2000}
+                    height={2000}
                     src={audience.dialogImageSmall}
                     alt={altText}
                     className="w-full h-auto object-cover rounded-lg"
