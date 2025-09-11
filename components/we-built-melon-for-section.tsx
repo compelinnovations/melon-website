@@ -62,14 +62,14 @@ const Features = () => {
     {
       title: "Freelancers working without benefits.",
       image: "/images/we-built-freelancers.png",
-      bgColor: "bg-gray-800",
+      bgColor: "bg-[#2A2A2A]",
       textColor: "text-white",
       size: "small",
       titleClassName: "",
       imageContainerClassName: "absolute bottom-0 top-10 right-0 w-full h-auto",
       imageClassName: "w-full h-full object-cover object-center",
       dialogTitle: "Freelancers working without benefits.",
-      dialogBgColor: "bg-gray-800",
+      dialogBgColor: "bg-[#2A2A2A]",
       dialogTextColor: "text-white",
       dialogStory:
         "James is a freelance developer in Lagos. When he needed surgery, he had to choose between his health and his savings. Now with Melon, he gets professional coverage without depending on anyone else.",
@@ -111,14 +111,14 @@ const Features = () => {
     {
       title: "Small businesses caring for employees.",
       image: "/images/we-built-small-businesses.png",
-      bgColor: "bg-gray-800",
+      bgColor: "bg-[#2A2A2A]",
       textColor: "text-white",
       size: "small",
       titleClassName: "",
       imageContainerClassName: "absolute bottom-0 right-0 w-full h-auto",
       imageClassName: "w-full h-full object-cover object-center",
       dialogTitle: "Small businesses caring for employees.",
-      dialogBgColor: "bg-gray-800",
+      dialogBgColor: "bg-[#2A2A2A]",
       dialogTextColor: "text-white",
       dialogStory:
         "Kemi runs a tech startup in Accra. She wanted to offer health benefits like big companies but couldn't afford traditional plans. With Melon, her team gets quality coverage at startup-friendly prices.",

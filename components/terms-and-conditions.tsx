@@ -1,6 +1,7 @@
 import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
 import Logo from "./logo";
+import Image from "next/image";
 
 export function TermsAndConditions() {
   const sections = [
@@ -281,100 +282,101 @@ export function TermsAndConditions() {
   return (
     <div className="min-h-screen bg-white">
       {/* Navigation */}
-      <nav className="bg-main-700 flex h-full items-center justify-center sticky top-0 z-50">
-        <Link href="/" className="hidden md:block pl-2 flex-shrink-0">
-          <Logo className="w-[100px] md:w-[120px]" useWhite={true} />
+      <nav className="bg-main-700 flex h-full items-center justify-center   sticky top-0 z-50">
+        <Link
+          href="/"
+          className="flex items-center space-x-2 text-white hover:text-gray-300 pl-8 md:pl-16 transition-colors"
+        >
+          <div className="flex gap-4 text-white  items-center justify-center">
+            <div className="bg-white rounded-full p-1">
+              <ArrowLeft className="w-5 h-5 text-main-700" />
+            </div>
+            <div>
+              <p>Back</p>
+            </div>
+          </div>
         </Link>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="flex items-center justify-between h-16">
             {/* Desktop Layout */}
-            <div className="hidden md:flex items-center space-x-6">
+            <div className="hidden md:flex items-center  space-x-6">
               <Link href="/" className="flex-shrink-0 block md:hidden">
                 <Logo className="w-[120px]" useWhite={true} />
               </Link>
-              <Link
-                href="/"
-                className="flex items-center space-x-2 text-white hover:text-gray-300 transition-colors"
-              >
-                <ArrowLeft className="w-5 h-5" />
-                <span>Back to Home</span>
-              </Link>
-            </div>
-
-            {/* Mobile Layout */}
-            <div className="flex md:hidden items-center justify-between w-full">
-              <Link
-                href="/"
-                className="flex items-center text-white hover:text-gray-300 transition-colors"
-              >
-                <ArrowLeft className="w-6 h-6" />
-              </Link>
-              <Link href="/" className="flex-shrink-0">
-                <Logo className="w-[100px]" useWhite={true} />
-              </Link>
-            </div>
-
-            <div className="hidden md:block text-sm text-gray-200">
-              Effective Year: 2025
             </div>
           </div>
         </div>
       </nav>
 
+      <div className="grid md:grid-cols-2 grid-cols-1 bg-main-700">
+        <div className="text-white flex flex-col flex-1 justify-start items-start pl-8 pt-0 md:pb-0 pb-10 md:pl-16 md:pt-12 h-full md:order-1 order-2">
+          <Link
+            href="/"
+            className="  md:block pl-0 flex-shrink-0 md:py-10 py-10 pt-5"
+          >
+            <Logo className="w-[100px] md:w-[120px]" useWhite={true} />
+          </Link>
+          <h2 className="font-semibold">Privacy Policy</h2>
+          <h2 className="font-semibold">Effective Year: 2025</h2>
+          <p className="">
+            Platform: Mobile App and Website (
+            <a
+              href="https://www.meloninsurance.co"
+              className=" hover:underline"
+            >
+              www.meloninsurance.co
+            </a>
+            )
+          </p>
+        </div>
+        <div className="pb-5 pl-5 md:order-2 order-1">
+          <Image
+            src={"/images/privacy-policy.png"}
+            alt="Privacy Policy"
+            width={2000}
+            height={2000}
+          />
+        </div>
+      </div>
+
       {/* Main Content */}
-      <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        {/* Header */}
-        <div className="text-center mb-16">
-          <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
-            Terms & Conditions
-          </h1>
-          <div className="text-lg text-gray-600 max-w-3xl mx-auto space-y-2">
-            <p>
-              <strong>Jurisdiction:</strong> Republic of Ghana
-            </p>
-            <p>
-              <strong>Platform:</strong> Mobile App and Website (
-              <a
-                href="https://www.meloninsurance.co"
-                className="text-blue-600 hover:underline"
-              >
-                www.meloninsurance.co
-              </a>
-              )
-            </p>
-          </div>
-        </div>
-
-        {/* Table of Contents */}
-        <div className="bg-gray-50 rounded-xl p-6 mb-12">
-          <h2 className="text-lg font-semibold text-gray-900 mb-4">
-            Table of Contents
-          </h2>
-          <nav className="grid grid-cols-1 md:grid-cols-2 gap-2">
+      <main className="max-w-7xl mx-auto  px-4 sm:px-6 lg:px-8 py-12">
+        <div className="flex gap-10">
+          {/* Sections */}
+          <div className="flex-1 space-y-16">
             {sections.map((section) => (
-              <a
+              <section
                 key={section.id}
-                href={`#${section.id}`}
-                className="text-blue-600 hover:text-blue-800 hover:underline text-sm py-1 transition-colors"
+                id={section.id}
+                className="scroll-mt-20"
               >
-                {section.title}
-              </a>
+                <h2 className="text-2xl font-bold text-gray-900 mb-6 pb-3 border-b border-gray-200">
+                  {section.title}
+                </h2>
+                <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed">
+                  {section.content}
+                </div>
+              </section>
             ))}
-          </nav>
-        </div>
+          </div>
 
-        {/* Sections */}
-        <div className="space-y-16">
-          {sections.map((section, index) => (
-            <section key={section.id} id={section.id} className="scroll-mt-20">
-              <h2 className="text-2xl font-bold text-gray-900 mb-6 pb-3 border-b border-gray-200">
-                {section.title}
-              </h2>
-              <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed">
-                {section.content}
-              </div>
-            </section>
-          ))}
+          {/* Table of Contents */}
+          <div className="bg-white shadow-lg hidden md:block shadow-main-100 w-auto max-h-max rounded-xl p-6 px-8 mb-12 flex-shrink-0">
+            {/* <h2 className="text-lg font-semibold text-gray-900 mb-4">
+              Table of Contents
+            </h2> */}
+            <nav className="grid grid-cols-1  md:grid-cols-1 gap-2">
+              {sections.map((section) => (
+                <a
+                  key={section.id}
+                  href={`#${section.id}`}
+                  className="text-black-600 hover:text-main-600 hover:underline text-sm py-1 transition-colors"
+                >
+                  {section.title}
+                </a>
+              ))}
+            </nav>
+          </div>
         </div>
 
         {/* Footer */}

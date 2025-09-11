@@ -1,6 +1,5 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { ArrowRight, Calendar, Mail } from "lucide-react";
 import Logo from "./logo";
@@ -11,8 +10,8 @@ export function WhatIsMelonSection() {
     <section id="what-is-melon" className="py-10 bg-white">
       <div className="max-w-7xl md:mx-auto px-4 sm:px-6 lg:px-8 md:w-full w-screen">
         <div className="text-center space-y-8 mb-8">
-          <h2 className="text-3xl md:text-4xl font-medium text-gray-900 flex items-center justify-center gap-2">
-            Hello{" "}
+          <h2 className="text-3xl md:text-4xl font-medium text-gray-900 flex items-center justify-center gap-0">
+            Hello
             <span className="text-blue-600">
               <Logo className="w-[170px]" />
             </span>
@@ -24,16 +23,19 @@ export function WhatIsMelonSection() {
             or on the move.
           </p>
 
-          <button className="bg-main-700 hover:bg-main-600 text-white px-6 py-3 rounded-full font-semibold flex items-center justify-center space-x-2 transition-colors">
-            <span>Download the app</span>
-            <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-              <path
-                fillRule="evenodd"
-                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                clipRule="evenodd"
-              />
-            </svg>
-          </button>
+          <div className="flex items-center justify-center">
+            {/* <Button className="bg-[#04c751] hover:bg-green-600 text-white rounded-full px-10 pl-[17px] py-5 text-lg">
+              Download the App
+              <ArrowRight className="w-4 h-4" />
+            </Button> */}
+
+            <button className="bg-sec-500 hover:bg-sec-600 min-w-[70vw] text-white px-6 py-3 rounded-full font-semibold flex items-center justify-center space-x-2 transition-colors">
+              <span>Download the app</span>
+              <div className="bg-white/20 rounded-full p-1">
+                <ArrowRight className="w-5 h-5" />
+              </div>
+            </button>
+          </div>
         </div>
 
         <Features />
