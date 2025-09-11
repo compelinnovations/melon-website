@@ -39,7 +39,7 @@ export function WhyChooseBenefitsSection() {
     <section id="why-melon" className="py-20 bg-main-700">
       <div className="max-w-7xl mx-auto px-0 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-2xl md:text-4xl font-medium text-white flex items-center justify-center gap-2">
+          <h2 className="text-2xl md:text-4xl font-medium text-white flex items-center justify-center gap-0">
             Why Choose{" "}
             <span className="text-blue-600 pt-2">
               <Logo className="w-[100px] md:w-[170px]" useWhite />
