@@ -10,14 +10,14 @@ export function WhatIsMelonSection() {
     <section id="what-is-melon" className="py-10 bg-white">
       <div className="max-w-7xl md:mx-auto px-4 sm:px-6 lg:px-8 md:w-full w-screen">
         <div className="text-center space-y-8 mb-8">
-          <h2 className="text-[20px] md:text-4xl font-medium text-gray-900 flex items-center pb-1 justify-center gap-0">
+          <h2 className="text-[20px] md:text-4xl font-medium text-gray-900 flex items-center pb-0 justify-center gap-0">
             Hello
             <span className="text-blue-600 pt-[1px]">
               <Logo className="w-[91px] md:w-[170px]" />
             </span>
           </h2>
 
-          <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed text-pretty">
+          <p className="text-md text-[#2A2A2A] max-w-4xl px-4 mx-auto leading-relaxed text-pretty">
             A new kind of health insurance experience, simple, digital, and
             affordable for Africans and their families, whether at home, abroad,
             or on the move.
