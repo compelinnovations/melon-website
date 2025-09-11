@@ -8,7 +8,7 @@ export function PrivacyPolicy() {
   const sections = [
     {
       id: "introduction",
-      title: "1. Introduction",
+      title: "Introduction",
       content: (
         <p>
           Melon is committed to protecting your personal data and respecting
@@ -21,7 +21,7 @@ export function PrivacyPolicy() {
     },
     {
       id: "information-collection",
-      title: "2. Information We Collect",
+      title: "Information We Collect",
       content: (
         <div>
           <p className="mb-4">We collect the following types of information:</p>
@@ -81,7 +81,7 @@ export function PrivacyPolicy() {
     },
     {
       id: "information-usage",
-      title: "3. How We Use Your Information",
+      title: "How We Use Your Information",
       content: (
         <div>
           <p className="mb-4">We use your data to:</p>
@@ -99,7 +99,7 @@ export function PrivacyPolicy() {
     },
     {
       id: "information-sharing",
-      title: "4. Sharing Your Information",
+      title: "Sharing Your Information",
       content: (
         <div>
           <p className="mb-4">We may share your data with:</p>
@@ -119,7 +119,7 @@ export function PrivacyPolicy() {
     },
     {
       id: "data-security",
-      title: "5. Data Security",
+      title: "Data Security",
       content: (
         <div>
           <p className="mb-4">
@@ -140,7 +140,7 @@ export function PrivacyPolicy() {
     },
     {
       id: "data-retention",
-      title: "6. Data Retention",
+      title: "Data Retention",
       content: (
         <div>
           <p className="mb-4">
@@ -159,7 +159,7 @@ export function PrivacyPolicy() {
     },
     {
       id: "user-rights",
-      title: "7. Your Rights",
+      title: "Your Rights",
       content: (
         <div>
           <p className="mb-4">You have the right to:</p>
@@ -188,7 +188,7 @@ export function PrivacyPolicy() {
     },
     {
       id: "children-privacy",
-      title: "8. Children's Privacy",
+      title: "Children's Privacy",
       content: (
         <p>
           Melon does not knowingly collect data from children under 18 without
@@ -199,7 +199,7 @@ export function PrivacyPolicy() {
     },
     {
       id: "cookies-tracking",
-      title: "9. Cookies and Tracking",
+      title: "Cookies and Tracking",
       content: (
         <div>
           <p className="mb-4">
@@ -218,7 +218,7 @@ export function PrivacyPolicy() {
     },
     {
       id: "international-transfers",
-      title: "10. International Transfers",
+      title: "International Transfers",
       content: (
         <p>
           If your data is transferred outside Ghana (e.g., for cloud storage),
@@ -229,7 +229,7 @@ export function PrivacyPolicy() {
     },
     {
       id: "policy-changes",
-      title: "11. Changes to This Policy",
+      title: "Changes to This Policy",
       content: (
         <p>
           We may update this Privacy Policy from time to time. Any changes will
@@ -240,7 +240,7 @@ export function PrivacyPolicy() {
     },
     {
       id: "contact",
-      title: "12. Contact Us",
+      title: "Contact Us",
       content: (
         <div className="bg-gray-50 p-6 rounded-xl">
           <p className="mb-4 text-gray-700">
@@ -363,8 +363,9 @@ export function PrivacyPolicy() {
                 <a
                   key={section.id}
                   href={`#${section.id}`}
-                  className="text-black-600 hover:text-main-600 hover:underline text-sm py-1 transition-colors"
+                  className="text-black-600 hover:text-main-600  hover:underline text-sm py-1 transition-colors"
                 >
+                  <span className="w-[3px] h-[3px] rounded-full bg-black inline-block mr-2 mb-[3px]"></span>
                   {section.title}
                 </a>
               ))}

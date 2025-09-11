@@ -7,7 +7,7 @@ export function TermsAndConditions() {
   const sections = [
     {
       id: "acceptance-of-terms",
-      title: "1. Acceptance of Terms",
+      title: "Acceptance of Terms",
       content: (
         <p>
           By accessing or using the Melon app or website ("Platform"), you agree
@@ -19,7 +19,7 @@ export function TermsAndConditions() {
     },
     {
       id: "who-we-are",
-      title: "2. Who We Are",
+      title: "Who We Are",
       content: (
         <p>
           Melon is a digital health insurance platform providing access to
@@ -31,7 +31,7 @@ export function TermsAndConditions() {
     },
     {
       id: "eligibility",
-      title: "3. Eligibility",
+      title: "Eligibility",
       content: (
         <div>
           <p className="mb-4">To use Melon, you must:</p>
@@ -47,7 +47,7 @@ export function TermsAndConditions() {
     },
     {
       id: "user-accounts",
-      title: "4. User Accounts",
+      title: "User Accounts",
       content: (
         <div className="space-y-4">
           <p>
@@ -64,7 +64,7 @@ export function TermsAndConditions() {
     },
     {
       id: "insurance-services",
-      title: "5. Insurance Services",
+      title: "Insurance Services",
       content: (
         <div className="space-y-4">
           <p className="bg-amber-50 p-4 rounded-lg">
@@ -82,7 +82,7 @@ export function TermsAndConditions() {
     },
     {
       id: "payments",
-      title: "6. Payments",
+      title: "Payments",
       content: (
         <div>
           <ul className="list-disc list-inside space-y-2 text-gray-700 ml-4">
@@ -101,7 +101,7 @@ export function TermsAndConditions() {
     },
     {
       id: "data-privacy",
-      title: "7. Data Privacy",
+      title: "Data Privacy",
       content: (
         <p>
           We collect, use, and protect your personal information in accordance
@@ -119,7 +119,7 @@ export function TermsAndConditions() {
     },
     {
       id: "intellectual-property",
-      title: "8. Intellectual Property",
+      title: "Intellectual Property",
       content: (
         <div className="space-y-4">
           <p>
@@ -136,7 +136,7 @@ export function TermsAndConditions() {
     },
     {
       id: "user-content",
-      title: "9. User Content",
+      title: "User Content",
       content: (
         <p>
           You are solely responsible for any content (including reviews,
@@ -148,7 +148,7 @@ export function TermsAndConditions() {
     },
     {
       id: "prohibited-conduct",
-      title: "10. Prohibited Conduct",
+      title: "Prohibited Conduct",
       content: (
         <div>
           <p className="mb-4">You agree not to:</p>
@@ -165,7 +165,7 @@ export function TermsAndConditions() {
     },
     {
       id: "third-party-links",
-      title: "11. Third-Party Links and Services",
+      title: "Third-Party Links and Services",
       content: (
         <p>
           Melon may link to third-party websites or services. We are not
@@ -176,7 +176,7 @@ export function TermsAndConditions() {
     },
     {
       id: "disclaimer-of-warranties",
-      title: "12. Disclaimer of Warranties",
+      title: "Disclaimer of Warranties",
       content: (
         <div>
           <p className="mb-4">
@@ -192,7 +192,7 @@ export function TermsAndConditions() {
     },
     {
       id: "limitation-of-liability",
-      title: "13. Limitation of Liability",
+      title: "Limitation of Liability",
       content: (
         <p>
           To the maximum extent permitted by law, Melon shall not be liable for
@@ -204,7 +204,7 @@ export function TermsAndConditions() {
     },
     {
       id: "indemnity",
-      title: "14. Indemnity",
+      title: "Indemnity",
       content: (
         <p>
           You agree to indemnify and hold harmless Melon and its affiliates from
@@ -215,7 +215,7 @@ export function TermsAndConditions() {
     },
     {
       id: "termination",
-      title: "15. Termination",
+      title: "Termination",
       content: (
         <p>
           Melon may suspend or terminate your access to the Platform at any time
@@ -226,7 +226,7 @@ export function TermsAndConditions() {
     },
     {
       id: "governing-law",
-      title: "16. Governing Law",
+      title: "Governing Law",
       content: (
         <p>
           These Terms are governed by the laws of the Republic of Ghana. Any
@@ -237,7 +237,7 @@ export function TermsAndConditions() {
     },
     {
       id: "changes-to-terms",
-      title: "17. Changes to Terms",
+      title: "Changes to Terms",
       content: (
         <p>
           Melon reserves the right to modify or update these Terms at any time.
@@ -248,7 +248,7 @@ export function TermsAndConditions() {
     },
     {
       id: "contact",
-      title: "18. Contact Us",
+      title: "Contact Us",
       content: (
         <div className="bg-gray-50 p-6 rounded-xl">
           <p className="mb-4 text-gray-700">
@@ -316,8 +316,9 @@ export function TermsAndConditions() {
           >
             <Logo className="w-[100px] md:w-[120px]" useWhite={true} />
           </Link>
-          <h2 className="font-semibold">Privacy Policy</h2>
+          <h2 className="font-semibold">Terms and Conditions</h2>
           <h2 className="font-semibold">Effective Year: 2025</h2>
+          <p className="">Jurisdiction: Republic of Ghana</p>
           <p className="">
             Platform: Mobile App and Website (
             <a
@@ -370,8 +371,9 @@ export function TermsAndConditions() {
                 <a
                   key={section.id}
                   href={`#${section.id}`}
-                  className="text-black-600 hover:text-main-600 hover:underline text-sm py-1 transition-colors"
+                  className="text-black-600 hover:text-main-600  hover:underline text-sm py-1 transition-colors"
                 >
+                  <span className="w-[3px] h-[3px] rounded-full bg-black inline-block mr-2 mb-[3px]"></span>
                   {section.title}
                 </a>
               ))}
