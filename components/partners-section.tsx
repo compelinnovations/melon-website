@@ -6,16 +6,16 @@ import Logo from "./logo";
 
 const partners = [
   {
-    name: "iRisk Management",
-    logo: "/images/irisk-mgt.png",
-    bgColor: "bg-gray-900",
-    textColor: "text-white",
-  },
-  {
     name: "Glico",
     logo: "/images/glico.png",
     bgColor: "bg-gray-200",
     textColor: "text-gray-800",
+  },
+  {
+    name: "iRisk Management",
+    logo: "/images/irisk-mgt.png",
+    bgColor: "bg-gray-900",
+    textColor: "text-white",
   },
   {
     name: "Phoenix Health Insurance",
@@ -29,12 +29,12 @@ const partners = [
     bgColor: "bg-gray-900",
     textColor: "text-white",
   },
-  {
-    name: "Top Pharmacy",
-    logo: "/images/top-pharm.png",
-    bgColor: "bg-gray-200",
-    textColor: "text-gray-800",
-  },
+  // {
+  //   name: "Top Pharmacy",
+  //   logo: "/images/top-pharm.png",
+  //   bgColor: "bg-gray-200",
+  //   textColor: "text-gray-800",
+  // },
 ];
 
 export function PartnersSection() {

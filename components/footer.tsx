@@ -68,15 +68,15 @@ export function Footer() {
       <div className="max-w-7xl mx-auto">
         <div className="bg-gray-100 py-16 pt-8 pb-8 rounded-3xl px-6 sm:px-8 lg:px-12">
           {/* Mobile Layout */}
-          <div className="flex flex-col items-start text-left gap-8 md:hidden">
+          <div className="flex flex-col items-start text-left gap-4 md:hidden">
             <div className="flex items-center gap-2">
               <Logo className="w-[140px]" />
             </div>
-            <p className="text-gray-700 text-md max-w-md">
-              Your health. Your peace of mind. <br />
-              Protected in minutes.
+            <p className="text-gray-700 text-md max-w-md pt-0!">
+              Insurance, reimagined for Africans <br />
+              everywhere.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 w-full">
+            <div className="flex flex-col sm:flex-row gap-4 pt-4 pb-4 sm:gap-8 w-full">
               <div>
                 <span className="text-gray-700">Talk to Us: </span>
                 <Link
@@ -96,7 +96,7 @@ export function Footer() {
                 </Link>
               </div>
             </div>
-            <div className="flex flex-col sm:flex-row gap-4 w-full">
+            <div className="flex flex-row sm:flex-row gap-4 pb-3 w-full">
               <a
                 href={footerData.appStoreLinks.googlePlay.url}
                 target="_blank"
@@ -106,9 +106,9 @@ export function Footer() {
                 <Image
                   src={footerData.appStoreLinks.googlePlay.image}
                   alt={footerData.appStoreLinks.googlePlay.alt}
-                  width={200}
+                  width={100}
                   height={60}
-                  className="h-14 w-auto"
+                  className="h-10 w-auto"
                 />
               </a>
               <a
@@ -120,27 +120,27 @@ export function Footer() {
                 <Image
                   src={footerData.appStoreLinks.appStore.image}
                   alt={footerData.appStoreLinks.appStore.alt}
-                  width={200}
+                  width={100}
                   height={60}
-                  className="min-w-[188px] h-14 w-auto"
+                  className="min-w-[188px]] h-10 w-auto"
                 />
               </a>
             </div>
-            <div className="flex gap-3 justify-start w-full">
+            <div className="flex gap-4 justify-start w-full">
               {footerData.socialLinks.map((social, index) => (
                 <a
                   key={index}
                   target="_blank"
                   rel="noopener noreferrer"
                   href={social.url}
-                  className="w-12 h-12 bg-sec-300 rounded-full flex items-center justify-center hover:bg-green-600 transition-colors"
+                  className="w-12 h-12 bg-[#64FF84] rounded-full flex items-center justify-center hover:bg-green-500 transition-colors"
                   aria-label={social.name}
                 >
                   {social.icon}
                 </a>
               ))}
             </div>
-            <div className="text-sm text-gray-600">
+            <div className="text-sm text-gray-600 pt-2">
               © 2025 Melon |
               {footerData.legalLinks.map((link, index) => (
                 <span key={index}>
@@ -162,7 +162,7 @@ export function Footer() {
                   <Logo className="w-[170px]" />
                 </div>
                 <p className="text-gray-700 text-md max-w-md">
-                  Your health. Your peace of mind. Protected in minutes.
+                  Insurance, reimagined for Africans everywhere.
                 </p>
                 <div className="flex gap-4">
                   <a

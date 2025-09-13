@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/sheet";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
+import { AppButton } from "./app-button";
 
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -96,7 +97,7 @@ export function Navigation() {
                 href="#what-is-melon"
                 onClick={(e) => handleSmoothScroll(e, "what-is-melon")}
                 className={`transition-colors font-medium hover:opacity-70 cursor-pointer ${
-                  isScrolled ? "text-gray-900" : "text-white"
+                  isScrolled ? "text-white" : "text-white"
                 }`}
               >
                 What is Melon
@@ -105,7 +106,7 @@ export function Navigation() {
                 href="#why-melon"
                 onClick={(e) => handleSmoothScroll(e, "why-melon")}
                 className={`transition-colors font-medium hover:opacity-70 cursor-pointer ${
-                  isScrolled ? "text-gray-900" : "text-white"
+                  isScrolled ? "text-white" : "text-white"
                 }`}
               >
                 Why Melon
@@ -114,7 +115,7 @@ export function Navigation() {
                 href="#who-is-melon-for"
                 onClick={(e) => handleSmoothScroll(e, "who-is-melon-for")}
                 className={`transition-colors font-medium hover:opacity-70 cursor-pointer ${
-                  isScrolled ? "text-gray-900" : "text-white"
+                  isScrolled ? "text-white" : "text-white"
                 }`}
               >
                 Who is Melon for
@@ -123,7 +124,7 @@ export function Navigation() {
                 href="#how-it-works"
                 onClick={(e) => handleSmoothScroll(e, "how-it-works")}
                 className={`transition-colors font-medium hover:opacity-70 cursor-pointer ${
-                  isScrolled ? "text-gray-900" : "text-white"
+                  isScrolled ? "text-white" : "text-white"
                 }`}
               >
                 How it works
@@ -132,10 +133,21 @@ export function Navigation() {
           </div>
 
           <div className="flex items-center gap-4">
-            <Button className="hidden sm:flex bg-sec-500 hover:bg-green-600 text-white rounded-full px-6 py-2 items-center gap-2">
+            {/* <Button className="hidden sm:flex bg-sec-500 hover:bg-green-600 text-white rounded-full px-6 py-2 items-center gap-2">
               Download the App
               <ArrowRight className="w-4 h-4" />
-            </Button>
+            </Button> */}
+
+            <div>
+              <AppButton
+                variant="primary"
+                size="sm"
+                className="min-w-[257px] md:min-w-[235px] hidden sm:flex h-auto py-2 min-h-[44px]"
+                classNameArrow="w-4! h-4!"
+              >
+                Download the app
+              </AppButton>
+            </div>
 
             {/* Mobile menu */}
             <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>

@@ -10,6 +10,7 @@ import {
   DialogClose,
 } from "@/components/ui/dialog";
 import { ScrollArea } from "@/components/ui/scroll-area";
+import { Button } from "./ui/button";
 
 export function WeBuiltMelonForSection() {
   return (
@@ -23,7 +24,7 @@ export function WeBuiltMelonForSection() {
             </span>
             for
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-xl text-[#2A2A2A] max-w-2xl mx-auto pt-4">
             Melon is designed for everyday life. Whoever you are, Melon makes
             health coverage simple and accessible.
           </p>
@@ -58,6 +59,7 @@ const Features = () => {
       ],
       dialogImage: "/images/we-built-student-info.png",
       dialogImageSmall: "/images/we-built-student-info-small.png",
+      buttonClassName: "",
     },
     {
       title: "Freelancers working without benefits.",
@@ -71,6 +73,7 @@ const Features = () => {
       dialogTitle: "Freelancers working without benefits.",
       dialogBgColor: "bg-[#2A2A2A]",
       dialogTextColor: "text-white",
+
       dialogStory:
         "James is a freelance developer in Lagos. When he needed surgery, he had to choose between his health and his savings. Now with Melon, he gets professional coverage without depending on anyone else.",
       dialogHowItWorksTitle: "How Melon Helps:",
@@ -81,6 +84,7 @@ const Features = () => {
       ],
       dialogImage: "/images/we-built-freelancers-info.png",
       dialogImageSmall: "/images/we-built-freelancers-info-small.png",
+      buttonClassName: "text-white",
     },
     {
       title: "Tourists staying safe while traveling.",
@@ -107,6 +111,7 @@ const Features = () => {
       ],
       dialogImage: "/images/we-built-tourist-info.png",
       dialogImageSmall: "/images/we-built-tourist-info-small.png",
+      buttonClassName: "",
     },
     {
       title: "Small businesses caring for employees.",
@@ -130,6 +135,7 @@ const Features = () => {
       ],
       dialogImage: "/images/we-built-sme-info.png",
       dialogImageSmall: "/images/we-built-sme-info-small.png",
+      buttonClassName: "text-white",
     },
     {
       title: "Diaspora sending love and support home.",
@@ -154,6 +160,7 @@ const Features = () => {
       ],
       dialogImage: "/images/we-built-diaspora-info.png",
       dialogImageSmall: "/images/we-built-diaspora-info-small.png",
+      buttonClassName: "",
     },
   ];
 
@@ -167,41 +174,48 @@ const Features = () => {
     altText: string;
   }) => (
     <Dialog>
-      <DialogTrigger asChild>
-        <div
+      <div
+        className={cn(
+          audience.bgColor,
+          "rounded-3xl p-8 pt-4 px-6 relative overflow-hidden",
+          className
+        )}
+      >
+        <h3
           className={cn(
-            audience.bgColor,
-            "rounded-3xl p-8 relative overflow-hidden cursor-pointer hover:scale-[1.02] transition-transform duration-200",
-            className
+            "text-[22px] lg:text-3xl font-normal mb-1 max-w-md leading-tight tracking-tight",
+            audience.textColor,
+            audience.titleClassName
           )}
         >
-          <h3
-            className={cn(
-              "text-2xl lg:text-3xl font-normal mb-6 max-w-md leading-tight tracking-tight",
-              audience.textColor,
-              audience.titleClassName
-            )}
+          {audience.title}
+        </h3>
+        <DialogTrigger asChild>
+          <Button
+            className={cn("pl-0 underline", audience.buttonClassName)}
+            variant={"link"}
           >
-            {audience.title}
-          </h3>
-          <div className={cn(audience.imageContainerClassName)}>
-            <Image
-              width={3000}
-              height={3000}
-              src={audience.image || "/placeholder.svg"}
-              alt={altText}
-              className={audience.imageClassName}
-            />
-          </div>
+            {" "}
+            Read more
+          </Button>
+        </DialogTrigger>
+        <div className={cn(audience.imageContainerClassName)}>
+          <Image
+            width={3000}
+            height={3000}
+            src={audience.image || "/placeholder.svg"}
+            alt={altText}
+            className={audience.imageClassName}
+          />
         </div>
-      </DialogTrigger>
+      </div>
       <DialogContent
         showCloseButton={false}
         className="sm:max-w-[90vw] md:max-w-[1220px]   p-0 overflow-hidden "
       >
         <div
           className={cn(
-            "min-h-[600px]  text-white relative",
+            "min-hh-[600px]  text-white relative",
             audience.dialogBgColor
           )}
         >
@@ -224,7 +238,7 @@ const Features = () => {
             </button>
           </DialogClose>
           {/* Desktop Layout */}
-          <div className="hidden md:grid md:pr-[30px] md:grid-cols-2 min-h-[600px] max-h-[600px]">
+          <div className="hidden md:grid md:pr-[30px] md:grid-cols-2 min-hh-[600px] max-h-[600px]]">
             {/* Left side - Image */}
             <div className="relative">
               <Image
@@ -250,7 +264,7 @@ const Features = () => {
                 </h2>
                 <p
                   className={cn(
-                    "text-lg mb-8 leading-relaxed",
+                    "md:text-lg text-md mb-8 leading-relaxed",
                     audience.dialogTextColor
                   )}
                 >
@@ -303,7 +317,7 @@ const Features = () => {
           </div>
 
           {/* Mobile Layout */}
-          <div className="md:hidden h-[90vh]  relative flex flex-col">
+          <div className="md:hidden h-[90vhh]  relative flex flex-col">
             {/* Scrollable Content */}
             <ScrollArea className="flex-1 h-full">
               <div className="pbb-24">
@@ -347,7 +361,7 @@ const Features = () => {
                 </div>
 
                 {/* Mobile Image */}
-                <div className="relative mb-6">
+                {/* <div className="relative mb-6">
                   <Image
                     width={2000}
                     height={2000}
@@ -355,12 +369,12 @@ const Features = () => {
                     alt={altText}
                     className="w-full h-auto object-cover rounded-lg"
                   />
-                </div>
+                </div> */}
               </div>
             </ScrollArea>
 
             {/* Fixed Download Button */}
-            <div className="absolute bottom-0 left-0 right-0 p-6 pt-4  from-current to-transparent">
+            <div className="absolutee bottom-0 left-0 right-0 p-6 pt-2 pb-7  from-current to-transparent">
               <button className="w-full bg-main-700 border-white border-2 hover:bg-main-600 text-white px-6 py-3 rounded-full font-semibold flex items-center justify-center space-x-2 transition-colors">
                 <span>Download the app</span>
                 <div className="border-white border-2 rounded-full p-1">

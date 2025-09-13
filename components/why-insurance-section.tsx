@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { motion } from "motion/react";
+import { AppButton } from "./app-button";
 
 export function WhyInsuranceSection() {
   return (
@@ -14,8 +15,8 @@ export function WhyInsuranceSection() {
           {/* Desktop Decorative smile image */}
           <motion.div
             className="absolute top-1/4 -left-32 z-0"
-            initial={{ opacity: 0, scale: 0.5, rotate: 15 }}
-            whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
+            // initial={{ opacity: 0, scale: 0.5, rotate: 15 }}
+            // whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
             transition={{ duration: 0.6, delay: 1.0 }}
             viewport={{ once: true }}
             style={{ maxWidth: "63vw", translateX: "-14vw" }}
@@ -45,7 +46,7 @@ export function WhyInsuranceSection() {
 
           {/* Right Content */}
           <div className="space-y-8 z-10 relative mb-10">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 text-balance">
+            <h2 className="text-4xl md:text-[45px] font-semibold text-gray-900 text-balance tracking-[1%]">
               Why Insurance
             </h2>
 
@@ -63,12 +64,15 @@ export function WhyInsuranceSection() {
               </p>
             </div>
 
-            <Button className="bg-main-700 hover:bg-main-600 text-white rounded-full px-8 py-6 text-lg font-semibold flex items-center justify-center gap-3 shadow-lg hover:shadow-xl transition-all duration-200 min-w-[240px]">
-              Get covered in minutes
-              <div className="bg-white/20 rounded-full p-1">
-                <ArrowRight className="w-5 h-5" />
-              </div>
-            </Button>
+            <div className="flex items-center px-4 sm:px-0 lg:px-0 justify-start">
+              <AppButton
+                variant="secondary"
+                size="md"
+                className="min-w-[257px] md:min-w-[300px]"
+              >
+                Get covered in minutes
+              </AppButton>
+            </div>
           </div>
         </div>
 
@@ -77,9 +81,9 @@ export function WhyInsuranceSection() {
           {/* Mobile decorative smile image */}
           <motion.div
             className="absolute top-[320px] -left-32 z-0"
-            initial={{ opacity: 0, scale: 0.5, rotate: 15 }}
-            whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
-            transition={{ duration: 0.6, delay: 1.2 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.5 }}
             viewport={{ once: true }}
             // style={{ maxWidth: "50vw", translateX: "-10vw" }}
           >
@@ -101,7 +105,7 @@ export function WhyInsuranceSection() {
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+            <h2 className="text-2xl  md:text-4xl font-semibold text-gray-900 tracking-wide">
               Why Insurance
             </h2>
           </motion.div>
@@ -129,12 +133,13 @@ export function WhyInsuranceSection() {
             transition={{ duration: 0.6, delay: 0.6 }}
             viewport={{ once: true }}
           >
-            <Button className="bg-main-700 hover:bg-main-600 text-white rounded-full px-8 py-6 text-lg font-semibold flex items-center justify-center gap-2 shadow-lg hover:shadow-xl transition-all duration-200 min-w-[240px]">
+            <AppButton
+              variant="secondary"
+              size="md"
+              className="min-w-[257px] md:min-w-[300px]"
+            >
               Get covered in minutes
-              <div className="bg-white/20 rounded-full p-1">
-                <ArrowRight className="w-5 h-5" />
-              </div>
-            </Button>
+            </AppButton>
           </motion.div>
 
           {/* 4. Image with smile behind */}

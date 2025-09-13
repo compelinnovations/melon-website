@@ -12,7 +12,7 @@ const benefits = [
   },
   {
     image: "/images/building.png",
-    title: "Trusted partner hospitals",
+    title: "Healthcare network",
     description:
       "Access to a growing network of quality hospitals and pharmacies.",
   },
@@ -48,11 +48,11 @@ export function WhyChooseBenefitsSection() {
         </div>
 
         {/* Desktop Layout: 3 columns, Mobile Layout: 2 columns */}
-        <div className="grid grid-cols-1 lg:grid-cols-6 gap-14 lg:gap-14 max-w-7xl mx-auto lg:[&>*:nth-child(1)]:col-span-2 lg:[&>*:nth-child(2)]:col-span-2 lg:[&>*:nth-child(3)]:col-span-2 lg:[&>*:nth-child(4)]:col-span-2 lg:[&>*:nth-child(4)]:col-start-2 lg:[&>*:nth-child(5)]:col-span-2 lg:[&>*:nth-child(5)]:col-start-4">
+        <div className="grid grid-cols-2 lg:grid-cols-6 gap-y-10 gap-0 lg:gap-14 max-w-7xl mx-auto lg:[&>*:nth-child(1)]:col-span-2 lg:[&>*:nth-child(2)]:col-span-2 lg:[&>*:nth-child(3)]:col-span-2 lg:[&>*:nth-child(4)]:col-span-2 lg:[&>*:nth-child(4)]:col-start-2 lg:[&>*:nth-child(5)]:col-span-2 lg:[&>*:nth-child(5)]:col-start-4">
           {benefits.map((benefit, index) => (
             <motion.div
               key={index}
-              className="text-left md:text-center px-10 pl-6"
+              className="text-left md:text-center px-5 md:px-10 md:pl-6"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
@@ -71,10 +71,10 @@ export function WhyChooseBenefitsSection() {
                   className="w-full h-full object-contain"
                 />
               </div>
-              <h3 className="text-xl lg:text-xl font-semibold text-white mb-3 lg:mb-4">
+              <h3 className="text-lg lg:text-xl font-semibold text-white mb-3 lg:mb-4">
                 {benefit.title}
               </h3>
-              <p className="text-blue-100 leading-relaxed text-lg lg:text-base">
+              <p className="text-blue-100 leading-relaxed text-md lg:text-base">
                 {benefit.description}
               </p>
             </motion.div>

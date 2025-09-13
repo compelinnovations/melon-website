@@ -1,6 +1,5 @@
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { AppButton } from "./app-button";
 
 export function OurModelSection() {
   return (
@@ -29,7 +28,7 @@ export function OurModelSection() {
               {/* Left Content - Text */}
               <div className="text-white space-y-8 relative z-10">
                 <div>
-                  <h2 className="text-4xl lg:text-5xl font-bold mb-6 text-center md:text-left text-balance">
+                  <h2 className="text-2xl md:text-4xl font-semibold mb-6 text-center md:text-left text-balance">
                     Our Model
                   </h2>
                   <p className="md:text-xl text-lg text-green-100 leading-relaxed mb-8 text-center md:text-left">
@@ -40,14 +39,13 @@ export function OurModelSection() {
                   </p>
 
                   <div className="flex justify-center md:justify-start">
-                    <Button
-                      size="lg"
-                      className="relative z-20 bg-[#005bae] hover:bg-[#004a94] text-white px-8 py-3 rounded-full text-lg font-semibold"
-                      style={{ backgroundColor: "#005bae !important" }}
+                    <AppButton
+                      variant="secondary"
+                      size="md"
+                      className="relative z-20"
                     >
                       Get covered in minutes
-                      <ArrowRight className="ml-2 h-5 w-5" />
-                    </Button>
+                    </AppButton>
                   </div>
                 </div>
               </div>

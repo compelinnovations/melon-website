@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { motion } from "motion/react";
 import { TextAnimate } from "./magicui/text-animate";
+import { AppButton } from "./app-button";
 
 export function HowItWorksSection() {
   const steps = [
@@ -28,7 +29,7 @@ export function HowItWorksSection() {
           <div className="text-white space-y-3 flex-1   lg:pr-8 lg:pl-8 z-10 order-1 lg:order-2 px-6 lg:px-0  pt-[50px] md:pt-[100px] lg:pt-0 flex flex-col justify-center lg:justify-start  md:w-full w-screen">
             <TextAnimate
               animation="fadeIn"
-              className="text-center md:text-left text-2xl md:text-3xl lg:text-5xl xl:text-5xl pb-0 font-bold   tracking-tight"
+              className="text-center md:text-left text-2xl md:text-3xl lg:text-5xl xl:text-5xl pb-0 font-semibold   tracking-tight"
               by="line"
               as="h1"
             >
@@ -52,30 +53,33 @@ export function HowItWorksSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: 0.5 }}
             >
-              <Button className="bg-[#00B74A] hover:bg-[#00A041] text-white rounded-full px-8 py-6 text-lg font-semibold flex items-center justify-center gap-3 shadow-lg hover:shadow-xl transition-all duration-200 min-w-[240px]">
-                Download the App
-                <div className="bg-white/20 rounded-full p-1">
-                  <ArrowRight className="w-5 h-5" />
-                </div>
-              </Button>
+              <div className="flex justify-center sm:justify-start w-full">
+                <AppButton
+                  variant="primary"
+                  size="md"
+                  className="min-w-[257px] md:min-w-[300px]"
+                >
+                  Download the app
+                </AppButton>
+              </div>
             </motion.div>
 
             <motion.div
               className="space-y-6 pt-5"
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 0.4, delay: 0.2 }}
+              initial={{ opacity: 1 }}
+              // whileInView={{ opacity: 1 }}
+              // transition={{ duration: 0.4, delay: 0.2 }}
               viewport={{ once: false }}
             >
               {steps.map((step, index) => (
                 <motion.div
                   key={index}
                   className="flex items-start gap-4"
-                  initial={{ opacity: 0, x: -20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
+                  // initial={{ opacity: 0, x: -20 }}
+                  // whileInView={{ opacity: 1, x: 0 }}
                   transition={{
-                    duration: 0.4,
-                    delay: 0.3 + index * 0.1,
+                    duration: 0.1,
+                    delay: 0.1 + index * 0.1,
                     ease: "easeOut",
                   }}
                   viewport={{ once: false }}
